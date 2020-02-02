@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+}
+.cate-layout {
+  height: 100%;
+  position: relative;
+  padding-top: 44px;
+}
+/* 头部 */
+.cate-header {
+  position: absolute;
+}
+.cate-header form {
+  width: 100%;
+  height: 44px;
+}
+.cate-header form input {
+  margin: 7px 0;
+  width: 100%;
+  height: 30px;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+/* 主体 */
+.cate-main {
+  height: 100%;
+}
+.cate-main .m-left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  overflow: hidden;
+}
+.cate-main .m-left ul li a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.cate-main .m-right {
+  height: 100%;
+  overflow: hidden;
+  padding: 5px;
+}
+.cate-main .m-right .cate-banner {
+  width: 100%;
+}
+.cate-main .m-right h4 {
+  font-size: 24px;
+}
+.cate-main .m-right ul li {
+  float: left;
+  width: 33.33333333%;
+  text-align: center;
+}
+.cate-main .m-right ul li img {
+  width: 70%;
+}

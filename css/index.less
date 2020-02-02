@@ -1,0 +1,254 @@
+@jdc: #f23030;
+
+body {
+    background-color: #ccc;
+}
+.jd-layout {
+    height: 1800px;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.jd-header {
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background-color: rgba(222, 24, 27, 0);
+    padding: 0 50px 0 75px;
+    z-index: 999;
+    /* 搜素框 */ 
+    form {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 5px 0;
+        input {
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 40px;
+        }
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            // background-color: red;
+            background-position: -60px -110px;
+        }
+    }
+    .logo {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 56px;
+        height: 21px;
+        // background-color: green;
+        background-position: 0 -109px;
+
+    }
+    .login {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 40px;
+        // background-color: green;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+    }
+} 
+
+/* banner */ 
+.jd-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    ul {
+        width: 1000%;
+        transform: translateX(-10%);    
+        li {
+            float: left;
+            width: 10%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    ol {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        li {
+            width: 8px;
+            height: 8px;
+            float: left;
+            margin: 5px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+        li.current {
+            background-color: #fff;
+        }
+    }
+}
+
+/* 导航 */ 
+.jd-nav {
+    ul {
+        padding: 20px 0;
+        li {
+            text-align: center;
+            float: left;
+            width: 20%;
+            margin-bottom: 20px;
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+/* 京东快报 */ 
+.jd-news {
+    position: relative;
+    background-color: #eee;
+    height: 30px;
+    padding: 0 50px 0 75px;
+    
+    img {
+        width: 73px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    .more {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .cut {
+        height: 30px;
+        padding-left: 10px;
+        overflow: hidden;
+        ul {
+            li {
+                height: 30px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+/* 京东秒杀 */ 
+.jd-sk {
+    .sk-title {
+        height: 30px;
+        // background-color: #f99;
+        line-height: 30px;
+        .logo {
+            width: 20px;
+            height: 21px;
+            background-position: -83px -110px;
+            margin-top: 4px;
+        }
+        .text {
+            color: @jdc;
+            margin: 0 10px;
+        }
+        .time {
+            margin-top: 6px;
+            span {
+                float: left;
+                width: 18px;
+                height: 18px;
+                margin: 0;
+                color: #fff;
+                background-color: #000;
+                border-radius: 3px;
+                text-align: center;
+                line-height: 18px;
+            }
+            span:nth-child(even) {
+                background-color: transparent;
+                color: #000;
+                margin: 0;
+                width: 8px;
+            }
+        }
+        .more {
+            color: #ccc;
+        }
+    }
+    .sk-main {
+        height: 100px;
+        // background-color: pink;
+        padding-top: 5px;
+        overflow: auto;
+        ul {
+            width: 880px;
+            li {
+                float: left;
+                width: 88px;
+                text-align: center;
+                border-right: 1px solid #ccc;
+                a {
+                    img {
+                        width: 70%;
+                    }
+                    p {
+                        line-height: 16px;
+                    }
+                    p:nth-child(2) {
+                        color: @jdc;
+                        font-weight: 700;
+                    }
+                    p:nth-child(3) {
+                        text-decoration: line-through;
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
+/* 主会场 */ 
+.jd-major {
+    a {
+        float: left;
+        width: 100/3%;
+        img {
+            width: 100%;
+        }
+    }
+}
+/* 商品布局 */ 
+.jd-product {
+    ul {
+        li {
+            a {
+                float: left;
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+            &:nth-child(1) {
+                a {
+                    width: 100/3%;
+                }
+            }
+        }
+    }
+}
